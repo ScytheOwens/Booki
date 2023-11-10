@@ -172,10 +172,6 @@ main {
         }
     }
 
-    .presentation-card{
-        background-color: white;
-    }
-
     .accommodations-and-trendings {
         display: flex;
         column-gap: 40px;
@@ -183,11 +179,103 @@ main {
         
         .accommodations {
             background-color: #F2F2F2;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
             padding: 30px;
+            row-gap: 30px;
+            width: 58.823rem;
 
             .accommodations-list {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
+                row-gap: 30px;
+
+                .presentation-card{
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 5px 5px 15px 5px;
+                    width: 30%;
+
+                    .cover {
+                        border-radius: 20px 20px 0 0;
+                        height: 7.8rem;
+                        object-fit: cover;
+                        width: 100%;
+                    }
+
+                    .presentation-card-title {
+                        margin: 5px 10px 0 10px;
+                    }
+
+                    .presentation-card-text {
+                        margin: 8px 10px 0 10px;
+
+                        .fa-star {
+                            &.on {
+                                color: #0065FC;
+                            }
+
+                            &.off {
+                                color: #F2F2F2;
+                            }
+                        }
+                    }
+                }
+
+                .list-link {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .trendings {
+            background-color: #F2F2F2;
+            border-radius: 15px;
+            padding: 30px;
+
+            .trendings-title {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+
+                .fa-chart-line {
+                    color: #0065FC;
+                }
+            }
+
+            .trendings-card {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                row-gap: 30px;
+
+                .trendings-link {
+                    display: block;
+
+                    .card {
+                        background-color: white;
+                        border-radius: 20px;
+                        display: flex;
+                        padding: 5px;
+                        width: 23rem;
+
+                        .card-cover {
+                            border-radius: 20px 0px 0 20px;
+                            height: 7.8rem;
+                            object-fit: cover;
+                            width: 7.8rem;
+                        }
+
+                        .card-content {
+                            margin: 5px 0 0 10px;
+                        }
+                    }
+                }
             }
         }
     }
