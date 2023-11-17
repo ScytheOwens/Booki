@@ -260,7 +260,6 @@ main {
 
                     .accommodations-card{
                         .accommodations-card-cover {
-                            border-radius: 20px 20px 0 0;
                             height: 7.8rem;
                             width: 100%;
                         }
@@ -314,6 +313,68 @@ main {
                             margin: 5px 0 5px 15px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .section-activities {
+        .activities {
+            background-color: white;
+
+            .activities-cards{
+                column-gap: 30px;
+                justify-content: space-between;
+                
+                .activities-link {
+                    width: 25%;
+
+                    .activities-card {
+                        width: 17.9rem;
+
+                        .activities-card-cover {
+                            height: 23.8rem;
+                            width: 17.9rem;
+                        }
+
+                        .activities-card-content {
+                            padding: 15px 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    margin: 35px 50px 0 50px;
+
+    .footer-section {
+        padding: 20px;
+        width: 100%;
+
+        .footer-section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer-section-list {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            margin: 15px 0 0 0;
+            padding: 0;
+            row-gap: 15px;
+
+            .footer-section-list-item {
+                .footer-link{
+                    color: black;
+                    font-size: 16px;
+                    text-decoration: none;
                 }
             }
         }
