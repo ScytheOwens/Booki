@@ -179,9 +179,23 @@ main {
 
     .section-presentation {
         margin-top: 35px;
+
+        .section-presentation-content {
+            background-color: #F2F2F2;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            row-gap: 30px;
+
+            .section-presentation-content-cards {
+                display: flex;
+                row-gap: 30px;
+            }
+        }
     }
 
-    .presentation-link {
+    .card-link {
         display: block;
         color: black;
         text-decoration: none;
@@ -190,31 +204,40 @@ main {
             background-color: white;
             border-radius: 20px;
             box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-            padding: 5px 5px 15px 5px;
+            padding: 5px;
 
-            .cover {
+            .presentation-card-cover {
                 border-radius: 20px 20px 0 0;
-                height: 7.8rem;
                 object-fit: cover;
-                width: 100%;
             }
 
-            .presentation-card-title {
-                font-size: 16px;
+            .presentation-card-content {
+                display: flex;
+                flex-direction: column;
                 margin: 5px 10px 0 10px;
-            }
+                row-gap: 8px;
 
-            .presentation-card-text {
-                font-size: 14px;
-                margin: 8px 10px 0 10px;
+                .presentation-card-title {
+                    font-size: 16px;
+                    margin: 0;
+                }
 
-                .fa-star {
-                    &.on {
-                        color: #0065FC;
-                    }
+                .presentation-card-text {
+                    font-size: 14px;
+                    margin: 0;
+                }
 
-                    &.off {
-                        color: #F2F2F2;
+                .presentation-card-rating {
+                    font-size: 14px;
+
+                    .fa-star {
+                        &.on {
+                            color: #0065FC;
+                        }
+
+                        &.off {
+                            color: #F2F2F2;
+                        }
                     }
                 }
             }
@@ -226,57 +249,24 @@ main {
         column-gap: 40px;
         
         .accommodations {
-            background-color: #F2F2F2;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            padding: 30px;
-            row-gap: 30px;
             width: 70%;
 
-            .accommodations-list {
-                display: flex;
+            .accommodations-cards {
                 flex-wrap: wrap;
                 justify-content: space-between;
-                row-gap: 30px;
 
                 .accommodations-link {
-                    display: block;
-                    color: black;
-                    text-decoration: none;
                     width: 30%;
 
-                    .presentation-card{
-                        background-color: white;
-                        border-radius: 20px;
-                        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-                        padding: 5px 5px 15px 5px;
-
-                        .cover {
+                    .accommodations-card{
+                        .accommodations-card-cover {
                             border-radius: 20px 20px 0 0;
                             height: 7.8rem;
-                            object-fit: cover;
                             width: 100%;
                         }
 
-                        .presentation-card-title {
-                            font-size: 16px;
-                            margin: 5px 10px 0 10px;
-                        }
-
-                        .presentation-card-text {
-                            font-size: 14px;
-                            margin: 8px 10px 0 10px;
-
-                            .fa-star {
-                                &.on {
-                                    color: #0065FC;
-                                }
-
-                                &.off {
-                                    color: #F2F2F2;
-                                }
-                            }
+                        .accommodations-card-content {
+                            padding-bottom: 10px;
                         }
                     }
                 }
@@ -291,9 +281,6 @@ main {
         }
 
         .trendings {
-            background-color: #F2F2F2;
-            border-radius: 15px;
-            padding: 30px;
             width: 30%;
 
             .trendings-title {
@@ -306,61 +293,25 @@ main {
                 }
             }
 
-            .trendings-card {
-                display: flex;
+            .trendings-cards {
                 flex-direction: column;
-                margin-top: 30px;
-                row-gap: 30px;
 
                 .trendings-link {
-                    color: black;
-                    display: block;
-                    height: 26%;
-                    text-decoration: none;
+                    height: 30%;
 
-                    .card {
-                        background-color: white;
-                        border-radius: 20px;
+                    .trendings-card {
                         display: flex;
-                        padding: 5px;
                         width: 23rem;
 
-                        .card-cover {
+                        .trendings-card-cover {
                             border-radius: 20px 0px 0 20px;
                             height: 9rem;
-                            object-fit: cover;
                             width: 7.8rem;
                         }
 
-                        .card-content {
-                            display: flex;
-                            flex-direction: column;
+                        .trendings-card-content {
                             justify-content: space-between;
                             margin: 5px 0 5px 15px;
-
-                            .card-txt {
-                                .card-title {
-                                    font-size: 16px;
-                                    margin: 0;
-                                }
-
-                                .card-subtitle {
-                                    font-size: 14px;
-                                    margin: 0;
-                                }
-                            }
-
-                            .card-rating {
-                                .fa-star {
-                                    &.on {
-                                        color: #0065FC;
-                                    }
-    
-                                    &.off {
-                                        color: #F2F2F2;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
