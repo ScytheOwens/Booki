@@ -294,23 +294,25 @@ main {
 
             .trendings-cards {
                 flex-direction: column;
+                height: 100%;
 
                 .trendings-link {
                     height: 30%;
 
                     .trendings-card {
                         display: flex;
-                        width: 23rem;
+                        height: 100%;
 
                         .trendings-card-cover {
                             border-radius: 20px 0px 0 20px;
-                            height: 9rem;
+                            height: 100%;
                             width: 7.8rem;
                         }
 
                         .trendings-card-content {
                             justify-content: space-between;
                             margin: 5px 0 5px 15px;
+                            row-gap: 0;
                         }
                     }
                 }
@@ -330,15 +332,15 @@ main {
                     width: 25%;
 
                     .activities-card {
-                        width: 17.9rem;
+                        height: 100%;
 
                         .activities-card-cover {
                             height: 23.8rem;
-                            width: 17.9rem;
+                            width: 100%;
                         }
 
                         .activities-card-content {
-                            padding: 15px 14px;
+                            padding: 15px 9px;
                         }
                     }
                 }
