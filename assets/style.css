@@ -183,6 +183,7 @@ main {
         .section-presentation-content {
             background-color: #F2F2F2;
             border-radius: 15px;
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             padding: 30px;
@@ -204,6 +205,8 @@ main {
             background-color: white;
             border-radius: 20px;
             box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+            box-sizing: border-box;
+            height: 100%;
             padding: 5px;
 
             .presentation-card-cover {
@@ -256,7 +259,7 @@ main {
                 justify-content: space-between;
 
                 .accommodations-link {
-                    width: 30%;
+                    width: 31%;
 
                     .accommodations-card{
                         .accommodations-card-cover {
@@ -306,7 +309,7 @@ main {
                         .trendings-card-cover {
                             border-radius: 20px 0px 0 20px;
                             height: 100%;
-                            width: 7.8rem;
+                            width: 35%;
                         }
 
                         .trendings-card-content {
@@ -324,7 +327,7 @@ main {
         .activities {
             background-color: white;
 
-            .activities-cards{
+            .activities-cards {
                 column-gap: 30px;
                 justify-content: space-between;
                 
@@ -377,6 +380,50 @@ footer {
                     color: black;
                     font-size: 16px;
                     text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet style */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        .accommodations-and-trendings {
+            column-gap: 0;
+            flex-direction: column;
+            row-gap: 50px;
+
+            .accommodations {
+                width: 100%;
+            }
+
+            .trendings {
+                width: 100%;
+
+                .trendings-cards {
+                    column-gap: 30px;
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    .trendings-link {
+                        height: auto;
+                        width: 31%;
+                    }
+                }
+            }
+        }
+
+        .section-activities {
+            .activities {    
+                .activities-cards {
+                    .activities-link {
+                        .activities-card {
+                            .activities-card-cover {
+                                height: 17.5rem;
+                            }
+                        }
+                    }
                 }
             }
         }
