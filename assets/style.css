@@ -124,34 +124,36 @@ main {
             }
         }
 
-        .filter {
+        .filters {
             align-items: center;
             display: flex;
             column-gap: 15px;
 
-            .label {
+            .filters-label {
                 font-size: 16px;
                 font-weight: bold;
             }
 
-            .filter-button {
-                background-color: white;
-                border: 2px solid #D9D9D9;
-                border-radius: 25px;
-                font-size: 17px;
-                font-weight: bold;
-                height: 50px;
-                padding: 4px 19px;
+            .filters-buttons {
+                .filter-button {
+                    background-color: white;
+                    border: 2px solid #D9D9D9;
+                    border-radius: 25px;
+                    font-size: 17px;
+                    font-weight: bold;
+                    height: 50px;
+                    padding: 4px 19px;
 
-                &:hover {
-                    background-color: #DEEBFF;
-                    cursor: pointer;
-                }
+                    &:hover {
+                        background-color: #DEEBFF;
+                        cursor: pointer;
+                    }
 
-                & i {
-                    color: #0065FC;
-                    font-size: 22px;
-                    margin-right: 10px;
+                    & i {
+                        color: #0065FC;
+                        font-size: 22px;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
@@ -389,6 +391,14 @@ footer {
 /* Tablet style */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     main {
+        .search-option {
+            .filters {
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+
         .accommodations-and-trendings {
             column-gap: 0;
             flex-direction: column;
